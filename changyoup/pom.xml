@@ -40,6 +40,8 @@
 
 		<javax.servlet-api.version>2.5</javax.servlet-api.version>
 
+		<json-lib.version>2.4</json-lib.version>
+
 		<maven.compiler.plugin.version>2.3.2</maven.compiler.plugin.version>
 		<jdk.version>1.8</jdk.version>
 
@@ -222,9 +224,17 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- Json-lib -->
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>${json-lib.version}</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+
 	</dependencies>
 	<build>
-		<finalName>changyoup</finalName>
+		<finalName>BookStore</finalName>
 
 		<plugins>
 			<plugin>

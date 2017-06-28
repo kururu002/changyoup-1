@@ -9,79 +9,79 @@
 	<package name="process" extends="struts-default">
 		<!-- Book -->
 		<action name="allBooksPro" class="action.AllBooksAction">
-			<result name="success">/bookstore/jsp/book.jsp</result>
+			<result name="success">/changyoup/jsp/book.jsp</result>
 		</action>
 		<action name="addBookPro" class="action.AddBookAction">
-			<result name="success">/bookstore/jsp/book.jsp</result>
+			<result name="success">/changyoup/jsp/book.jsp</result>
 		</action>
 		<action name="updateBookPro" class="action.UpdateBookAction">
-			<result name="success">/bookstore/jsp/book.jsp</result>
+			<result name="success">/changyoup/jsp/book.jsp</result>
 		</action>
 		<action name="deleteBookPro" class="action.DeleteBookAction">
-			<result name="success">/bookstore/jsp/book.jsp</result>
+			<result name="success">/changyoup/jsp/book.jsp</result>
 		</action>
 
 		<!-- Order -->
 		<action name="allOrdersPro" class="action.AllOrdersAction">
-			<result name="success">/bookstore/jsp/order.jsp</result>
+			<result name="success">/changyoup/jsp/order.jsp</result>
 		</action>
 		<action name="addOrderPro" class="action.AddOrderAction">
-			<result name="success">/bookstore/jsp/order.jsp</result>
+			<result name="success">/changyoup/jsp/order.jsp</result>
 		</action>
 		<action name="updateOrderPro" class="action.UpdateOrderAction">
-			<result name="success">/bookstore/jsp/order.jsp</result>
+			<result name="success">/changyoup/jsp/order.jsp</result>
 		</action>
 		<action name="deleteOrderPro" class="action.DeleteOrderAction">
-			<result name="success">/bookstore/jsp/order.jsp</result>
+			<result name="success">/changyoup/jsp/order.jsp</result>
 		</action>
 
 		<!-- Orderitem -->
 		<action name="allOrderitemsPro" class="action.AllOrderitemsAction">
-			<result name="success">/bookstore/jsp/orderitem.jsp</result>
+			<result name="success">/changyoup/jsp/orderitem.jsp</result>
 		</action>
 		<action name="addOrderitemPro" class="action.AddOrderitemAction">
-			<result name="success">/bookstore/jsp/orderitem.jsp</result>
+			<result name="success">/changyoup/jsp/orderitem.jsp</result>
 		</action>
 		<action name="updateOrderitemPro" class="action.UpdateOrderitemAction">
-			<result name="success">/bookstore/jsp/orderitem.jsp</result>
+			<result name="success">/changyoup/jsp/orderitem.jsp</result>
 		</action>
 		<action name="deleteOrderitemPro" class="action.DeleteOrderitemAction">
-			<result name="success">/bookstore/jsp/orderitem.jsp</result>
+			<result name="success">/changyoup/jsp/orderitem.jsp</result>
 		</action>
 
 		<!-- User -->
 		<action name="allUsersPro" class="action.AllUsersAction">
-			<result name="success">/bookstore/jsp/user.jsp</result>
+			<result name="success">/changyoup/jsp/user.jsp</result>
 		</action>
 		<action name="addUserPro" class="action.AddUserAction">
-			<result name="success">/bookstore/jsp/user.jsp</result>
+			<result name="success">/changyoup/jsp/user.jsp</result>
 		</action>
 		<action name="updateUserPro" class="action.UpdateUserAction">
-			<result name="success">/bookstore/jsp/user.jsp</result>
+			<result name="success">/changyoup/jsp/user.jsp</result>
 		</action>
 		<action name="deleteUserPro" class="action.DeleteUserAction">
-			<result name="success">/bookstore/jsp/user.jsp</result>
+			<result name="success">/changyoup/jsp/user.jsp</result>
 		</action>
 		
 		<!--  Login  -->
 		<action name="Login" class="logina" method="login">
-            <result name="input">/bookstore/jsp/index.jsp</result>
-            <result name="error">/bookstore/jsp/success.jsp</result>
-            <result name="success">/bookstore/jsp/index.jsp</result>
+            <result name="input">/changyoup/jsp/index.jsp</result>
+            <result name="error">/changyoup/jsp/success.jsp</result>
+            <result name="success">/changyoup/jsp/index.jsp</result>
         </action>
         
         <!-- Register -->
         <action name="Register" class="registera" method="register">
-            <result name="error">/bookstore/jsp/register.jsp</result>
-            <result name="success">/bookstore/jsp/index.jsp</result>
+            <result name="error">/changyoup/jsp/register.jsp</result>
+            <result name="success">/changyoup/jsp/index.jsp</result>
         </action>
         
         <!-- Cart -->
         <action name="UserCart" class="action.CartAction">
-			<result name="success">/bookstore/jsp/usercart.jsp</result>
+			<result name="success">/changyoup/jsp/usercart.jsp</result>
 		</action>
 		<action name="AddCartPro" class="action.AddCartAction">
-			<result name="success">/bookstore/jsp/usercart.jsp</result>
+			<result name="success">/changyoup/jsp/usercart.jsp</result>
 		</action>
 		<action name="*">
 			<result>/{1}.jsp</result>

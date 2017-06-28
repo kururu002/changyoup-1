@@ -65,6 +65,43 @@
 		<aop:pointcut id="beanPointcut" expression="bean(appService)" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="beanPointcut" />
 	</aop:config>
+	
+	
+    <!-- Dao注入sessionFactory -->
+    <bean id="logind" class="dao.impl.LoginDaoImpl">
+        <!-- 注入持久化操作所需的SessionFactory -->
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+
+    <!-- service注入dao id为下面的ref class为service实现类 -->
+    <bean id="logins" class="service.impl.LoginServiceImpl">
+        <property name="logindao" ref="logind"></property>
+    </bean>
+
+    <!-- Action注入service id="" 注入 class="action路径" name="loginservice"与LoginAction中声明的要保持一致 
+        ref随便取 -->
+    <bean id="logina" class="action.LoginAction" scope="prototype">
+        <property name="loginservice" ref="logins"></property>
+    </bean>
+    <!-- Register -->
     
+	 <bean id="registerd" class="dao.impl.RegisterDaoImpl">
+        <!-- 注入持久化操作所需的SessionFactory -->
+        <property name="sessionFactory">
+            <ref bean="sessionFactory" />
+        </property>
+    </bean>
+    <!-- service注入dao id为下面的ref class为service实现类 -->
+    <bean id="registers" class="service.impl.RegisterServiceImpl">
+        <property name="registerdao" ref="registerd"></property>
+    </bean>
+
+    <!-- Action注入service id="" 注入 class="action路径" name="loginservice"与LoginAction中声明的要保持一致 
+        ref随便取 -->
+    <bean id="registera" class="action.RegisterAction" scope="prototype">
+        <property name="registerservice" ref="registers"></property>
+    </bean>
     
 </beans>

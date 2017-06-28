@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sjtu.se</groupId>
-	<artifactId>BookStore</artifactId>
+	<artifactId>changyoup</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BookStore</name>
+	<name>changyoup</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -39,8 +39,6 @@
 		<xwork.core.version>2.2.1</xwork.core.version>
 
 		<javax.servlet-api.version>2.5</javax.servlet-api.version>
-
-		<json-lib.version>2.4</json-lib.version>
 
 		<maven.compiler.plugin.version>2.3.2</maven.compiler.plugin.version>
 		<jdk.version>1.8</jdk.version>
@@ -224,17 +222,9 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- Json-lib -->
-		<dependency>
-			<groupId>net.sf.json-lib</groupId>
-			<artifactId>json-lib</artifactId>
-			<version>${json-lib.version}</version>
-			<classifier>jdk15</classifier>
-		</dependency>
-
 	</dependencies>
 	<build>
-		<finalName>BookStore</finalName>
+		<finalName>changyoup</finalName>
 
 		<plugins>
 			<plugin>
